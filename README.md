@@ -2,7 +2,7 @@
 
 npm install
 
-npm start
+npm start <br />
 mongod
 
 
