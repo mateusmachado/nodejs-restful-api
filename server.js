@@ -1,9 +1,9 @@
 let express = require('express'),
-  app = express(),
-  port = process.env.PORT || 3000,
-  mongoose = require('mongoose'),
-  Task = require('./api/models/todoListModel'), //created model loading here
-  bodyParser = require('body-parser');
+app = express(),
+port = process.env.PORT || 3000,
+mongoose = require('mongoose'),
+Task = require('./api/models/todoListModel'), //created model loading here
+bodyParser = require('body-parser');
   
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
@@ -22,3 +22,5 @@ app.listen(port);
 
 
 console.log('todo list RESTful API server started on: ' + port);
+
+module.exports = app;

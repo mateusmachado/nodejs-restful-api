@@ -1,7 +1,9 @@
 'use strict';
 
+'use strict';
+
 module.exports = {
-	env: 'development',
-	db: 'mongodb://localhost/Tododb',
-	port: process.env.PORT || 4000,
+  env: 'test',
+  db: 'mongodb://localhost/TododbTest',
+  port: process.env.PORT || 4100,
 };
